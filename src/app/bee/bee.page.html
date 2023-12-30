@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Bee
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="ion-content-center">
+    <div id="beeImage" class="box">
+      <ion-img src="./assets/Bee.jpeg" style="margin: auto;"></ion-img>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="first-row">
+      <ion-button (click)="Up()">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="second-row">
+      <div>
+        <ion-button (click)="Left()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div>
+        <ion-button (click)="Right()">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div class="third-row">
+      <ion-button (click)="Down()">
+        <ion-icon name="arrow-down-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

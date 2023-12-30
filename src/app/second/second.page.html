@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>second</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+ <ion-card (click)="Play()" #card class="card">
+  <ion-card-content>Card Content</ion-card-content>
+</ion-card>
+
+  <ion-button (click)="Play()">Play</ion-button>
+  <ion-button (click)="Pause()">Pause</ion-button>
+  <ion-button (click)="Stop()">Stop</ion-button>
+
+</ion-content>
